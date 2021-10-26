@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>JavaScript Object Notation</h2>
+
+
+    <script>
+        const users = {
+            id : 001,
+            name : "Shiplo",
+            versity : "Diu",
+            hobby:{
+                sports : "cricket",
+                travel : "on train"
+            },
+            friends : ["Jony", "Hridoy"],
+            friendsAge : [45, 65]
+        }
+        console.log(users);
+        console.log("_________________________________");
+
+
+        const userJSON = JSON.stringify(users);
+        console.log(userJSON);
+        console.log("_________________________________");
+
+        const objectJSON = JSON.parse(userJSON);
+        console.log(objectJSON);
+    </script>
+</body>
+</html>
